@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009-2020 SAP SE or an SAP affiliate company. All rights reserved.
+ * Copyright (C) 2009-2020 SAP SE or an SAP affiliate company. All rights reserved. test
  */
 sap.ui.predefine('hcm/fab/my0101/Component', ["sap/ui/core/UIComponent", "sap/ui/Device", "hcm/fab/my0101/model/models",
 	"hcm/fab/my0101/controller/ErrorHandler"
