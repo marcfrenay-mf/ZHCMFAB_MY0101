@@ -1,0 +1,15 @@
+{
+    "type": "sap.web",
+    "builders": {
+        "configs": {}
+    },
+    "runners": {
+        "configs": {}
+    },
+    "attributes": {
+        "sap.watt.common.setting": [
+            "{\"projectType\":[\"sap.watt.uitools.ide.web\",\"sap.watt.uitools.ide.fiori\"],\"mockpreview\":{\"mockUri\":\"/sap/opu/odata/sap/ZHCMFAB_0101_SRV\",\"metadataFilePath\":\"localService/metadata.xml\",\"loadJSONFiles\":false,\"loadCustomRequests\":false,\"mockRequestsFilePath\":\"\"},\"deploy\":{\"destination\":\"GWD\",\"name\":\"ZHCMFAB_TAX\"},\"appparams\":[{\"paramName\":\"sap-ui-xx-lesssupport\",\"paramValue\":\"true\",\"paramActive\":true}],\"generation\":[{\"templateId\":\"servicecatalog.connectivityComponentForManifest\",\"templateVersion\":\"0.0.0\",\"dateTimeStamp\":\"Thu, 30 Mar 2023 06:56:20 GMT\"}],\"dataBinding\":{}}"
+        ]
+    },
+    "mixinTypes": []
+}

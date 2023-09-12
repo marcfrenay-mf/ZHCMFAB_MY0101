@@ -1,0 +1,238 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": "Component-dbg.js",
+      "module": "hcm/fab/my0101/Component.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/core/UIComponent.js",
+        "sap/ui/Device.js",
+        "hcm/fab/my0101/model/models.js",
+        "hcm/fab/my0101/controller/ErrorHandler.js"
+      ]
+    },
+    {
+      "name": "Component-preload.js",
+      "merged": true
+    },
+    {
+      "name": "Component.js",
+      "module": "hcm/fab/my0101/Component.js",
+      "required": [
+        "sap/ui/core/UIComponent.js",
+        "sap/ui/Device.js",
+        "hcm/fab/my0101/model/models.js",
+        "hcm/fab/my0101/controller/ErrorHandler.js"
+      ]
+    },
+    {
+      "name": "config/EntityMap.json"
+    },
+    {
+      "name": "controller/App-dbg.controller.js",
+      "module": "hcm/fab/my0101/controller/App.controller.js",
+      "isDebug": true,
+      "required": [
+        "hcm/fab/my0101/controller/BaseController.js",
+        "sap/ui/model/json/JSONModel.js"
+      ]
+    },
+    {
+      "name": "controller/App.controller.js",
+      "module": "hcm/fab/my0101/controller/App.controller.js",
+      "required": [
+        "hcm/fab/my0101/controller/BaseController.js",
+        "sap/ui/model/json/JSONModel.js"
+      ]
+    },
+    {
+      "name": "controller/BaseController-dbg.js",
+      "module": "hcm/fab/my0101/controller/BaseController.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/core/mvc/Controller.js"
+      ]
+    },
+    {
+      "name": "controller/BaseController.js",
+      "module": "hcm/fab/my0101/controller/BaseController.js",
+      "required": [
+        "sap/ui/core/mvc/Controller.js"
+      ]
+    },
+    {
+      "name": "controller/CommonCountryController-dbg.controller.js",
+      "module": "hcm/fab/my0101/controller/CommonCountryController.controller.js",
+      "isDebug": true,
+      "required": [
+        "hcm/fab/lib/common/controller/PersInfoCommonCountryController.controller.js",
+        "sap/ui/model/json/JSONModel.js"
+      ]
+    },
+    {
+      "name": "controller/CommonCountryController.controller.js",
+      "module": "hcm/fab/my0101/controller/CommonCountryController.controller.js",
+      "required": [
+        "hcm/fab/lib/common/controller/PersInfoCommonCountryController.controller.js",
+        "sap/ui/model/json/JSONModel.js"
+      ]
+    },
+    {
+      "name": "controller/ErrorHandler-dbg.js",
+      "module": "hcm/fab/my0101/controller/ErrorHandler.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/base/Object.js",
+        "sap/m/MessageBox.js",
+        "sap/m/MessageToast.js"
+      ]
+    },
+    {
+      "name": "controller/ErrorHandler.js",
+      "module": "hcm/fab/my0101/controller/ErrorHandler.js",
+      "required": [
+        "sap/ui/base/Object.js",
+        "sap/m/MessageBox.js",
+        "sap/m/MessageToast.js"
+      ]
+    },
+    {
+      "name": "controller/Main-dbg.controller.js",
+      "module": "hcm/fab/my0101/controller/Main.controller.js",
+      "isDebug": true,
+      "required": [
+        "hcm/fab/lib/common/util/CommonModelManager.js",
+        "hcm/fab/my0101/controller/BaseController.js",
+        "sap/m/MessageBox.js",
+        "sap/ui/model/json/JSONModel.js",
+        "sap/ui/core/routing/History.js",
+        "hcm/fab/my0101/model/formatter.js",
+        "sap/ui/model/Filter.js",
+        "sap/ui/model/FilterOperator.js"
+      ]
+    },
+    {
+      "name": "controller/Main.controller.js",
+      "module": "hcm/fab/my0101/controller/Main.controller.js",
+      "required": [
+        "hcm/fab/lib/common/util/CommonModelManager.js",
+        "hcm/fab/my0101/controller/BaseController.js",
+        "sap/m/MessageBox.js",
+        "sap/ui/model/json/JSONModel.js",
+        "sap/ui/core/routing/History.js",
+        "hcm/fab/my0101/model/formatter.js",
+        "sap/ui/model/Filter.js",
+        "sap/ui/model/FilterOperator.js"
+      ]
+    },
+    {
+      "name": "countryViews/12_Display_V001.view.xml",
+      "module": "hcm/fab/my0101/countryViews/12_Display_V001.view.xml",
+      "required": [
+        "sap/ui/core/mvc/XMLView.js",
+        "hcm/fab/lib/common/controller/PersInfoWrapperController.controller.js",
+        "sap/ui/layout/form/SimpleForm.js",
+        "sap/ui/core/Fragment.js",
+        "hcm/fab/lib/common/view/fragment/PersInfoRecordToolbar.fragment.xml",
+        "sap/ui/core/Title.js",
+        "sap/m/Label.js",
+        "sap/m/Text.js",
+        "sap/ui/core/ExtensionPoint.js"
+      ]
+    },
+
+    {
+      "name": "i18n/i18n.properties",
+      "module": "hcm/fab/my0101/i18n/i18n.properties",
+      "locale": "",
+      "raw": "i18n/i18n.properties"
+    },
+    {
+      "name": "i18n/i18n_en.properties",
+      "module": "hcm/fab/my0101/i18n/i18n_en.properties",
+      "locale": "en",
+      "raw": "i18n/i18n.properties"
+    },
+    {
+      "name": "i18n/i18n_fr.properties",
+      "module": "hcm/fab/my0101/i18n/i18n_fr.properties",
+      "locale": "fr",
+      "raw": "i18n/i18n.properties"
+    },
+    {
+      "name": "i18n/i18n_nl.properties",
+      "module": "hcm/fab/my0101/i18n/i18n_nl.properties",
+      "locale": "nl",
+      "raw": "i18n/i18n.properties"
+    },
+    
+    {
+      "name": "localService/metadata.xml"
+    },
+    {
+      "name": "localService/mockserver-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "localService/mockserver.js"
+    },
+    {
+      "name": "manifest.json",
+      "module": "hcm/fab/my0101/manifest.json"
+    },
+    {
+      "name": "model/formatter-dbg.js",
+      "module": "hcm/fab/my0101/model/formatter.js",
+      "isDebug": true
+    },
+    {
+      "name": "model/formatter.js",
+      "module": "hcm/fab/my0101/model/formatter.js"
+    },
+    {
+      "name": "model/models-dbg.js",
+      "module": "hcm/fab/my0101/model/models.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/model/json/JSONModel.js",
+        "sap/ui/Device.js"
+      ]
+    },
+    {
+      "name": "model/models.js",
+      "module": "hcm/fab/my0101/model/models.js",
+      "required": [
+        "sap/ui/model/json/JSONModel.js",
+        "sap/ui/Device.js"
+      ]
+    },
+    {
+      "name": "neo-app.json"
+    },
+    {
+      "name": "resources.json"
+    },
+    {
+      "name": "version.json"
+    },
+    {
+      "name": "view/App.view.xml",
+      "module": "hcm/fab/my0101/view/App.view.xml",
+      "required": [
+        "sap/ui/core/mvc/XMLView.js",
+        "hcm/fab/my0101/controller/App.controller.js",
+        "sap/m/App.js"
+      ]
+    },
+    {
+      "name": "view/Main.view.xml",
+      "module": "hcm/fab/my0101/view/Main.view.xml",
+      "required": [
+        "sap/ui/core/mvc/XMLView.js",
+        "hcm/fab/my0101/controller/Main.controller.js",
+        "hcm/fab/lib/common/controls/PersInfoControl.js"
+      ]
+    }
+  ]
+}

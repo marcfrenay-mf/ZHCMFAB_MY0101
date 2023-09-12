@@ -1,0 +1,135 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZHCMFAB_0101_SRV" xml:lang="fr" sap:schema-version="1">
+			<EntityType Name="FieldMetaData" sap:content-version="1">
+				<Key><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="InfotypeId"/><PropertyRef Name="SubtypeId"/><PropertyRef Name="ObjectId"/><PropertyRef Name="LockIndicator"/><PropertyRef Name="EndDate"/><PropertyRef Name="BeginDate"/><PropertyRef Name="SequenceNumber"/></Key><Property Name="EmployeeNumber" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Matricule"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="InfotypeId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Infotype" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="SubtypeId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="SsType" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="ObjectId" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="ID objet" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="LockIndicator" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Code blocage" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="EndDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Date fin" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="BeginDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="SequenceNumber" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="N° enr. infty"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="Versionid" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="ID VersInfotype"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="IsEditMode" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="VRAI" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="FieldName" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Nom de zone"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="IsVisible" Type="Edm.Boolean" sap:unicode="false" sap:label="VRAI" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="IsEditable" Type="Edm.Boolean" sap:unicode="false" sap:label="VRAI" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="IsRequired" Type="Edm.Boolean" sap:unicode="false" sap:label="VRAI" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ValidityInfo" sap:content-version="1">
+				<Key><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="InfotypeId"/><PropertyRef Name="SubtypeId"/><PropertyRef Name="ObjectId"/><PropertyRef Name="LockIndicator"/><PropertyRef Name="EndDate"/><PropertyRef Name="BeginDate"/><PropertyRef Name="SequenceNumber"/><PropertyRef Name="ValidityType"/></Key><Property Name="EmployeeNumber" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Matricule"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="InfotypeId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Infotype" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="SubtypeId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="SsType" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ObjectId" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="ID objet" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="LockIndicator" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Code blocage" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="EndDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Date fin" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="BeginDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="SequenceNumber" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="N° enr. infty"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ValidityType" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Type validité"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ValidityBeginDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="ValidityEndDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Date fin"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="OptionSelected" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="VRAI" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="My0101" sap:content-version="1">
+				<Key><PropertyRef Name="BeginDate"/><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="EndDate"/><PropertyRef Name="InfotypeId"/><PropertyRef Name="LockIndicator"/><PropertyRef Name="ObjectId"/><PropertyRef Name="SequenceNumber"/><PropertyRef Name="SubtypeId"/></Key><Property Name="BeginDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Date déb."
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="BVAMT" Type="Edm.String" MaxLength="5" sap:unicode="false" sap:label="Per. hand. &lt; 65" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="BVATL" Type="Edm.String" MaxLength="5" sap:unicode="false" sap:label="NbAutrPrsChrg&lt;65" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="BVKTL" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="Coûts enfants" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="BVMKT" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="Enf. handicapé" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="BVRES" Type="Edm.Boolean" sap:unicode="false" sap:label="Résident" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="BVWMV" Type="Edm.Boolean" sap:unicode="false" sap:label="Employé handic." sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="DisplayScreen" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="ÉcrInterfUtil." sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="EditScreen" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="ÉcrInterfUtil." sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="EmployeeNumber" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Matricule"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="EndDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Date fin" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="InfotypeId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Infotype" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="IsDeletable" Type="Edm.Boolean" sap:unicode="false" sap:label="VRAI" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/><Property Name="IsEditable" Type="Edm.Boolean" sap:unicode="false" sap:label="VRAI" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/><Property Name="LockIndicator" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Code blocage" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="N65SD" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="PersHand. &gt;= 65" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="NR65S" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="NbrePers. &gt;= 65" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ObjectId" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="ID objet" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="PersInfoEtag" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Valeur de hachage" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="SequenceNumber" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="N° enr. infty"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="SubtypeId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="SsType" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="User" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Modifié par" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><NavigationProperty Name="toFieldMetaData" Relationship="ZHCMFAB_0101_SRV.fromMy0101ToFieldMetaData"
+					FromRole="FromRole_fromMy0101ToFieldMetaData" ToRole="ToRole_fromMy0101ToFieldMetaData"/><NavigationProperty Name="toValidityInfo" Relationship="ZHCMFAB_0101_SRV.fromMy0101ToValidityInfo"
+					FromRole="FromRole_fromMy0101ToValidityInfo" ToRole="ToRole_fromMy0101ToValidityInfo"/></EntityType>
+			<EntityType Name="SubtypeAttributes" sap:content-version="1">
+				<Key><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="InfotypeId"/><PropertyRef Name="SubtypeId"/></Key><Property Name="EmployeeNumber" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Matricule"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="InfotypeId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Infotype" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="SubtypeId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="SsType" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="SubtypeText" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Désignation" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="DefaultBeginDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Date déb." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="IsCreatable" Type="Edm.Boolean" sap:unicode="false" sap:label="VRAI" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="HasSubtypes" Type="Edm.Boolean" sap:unicode="false" sap:label="VRAI" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="My0101Default" sap:content-version="1">
+				<Key><PropertyRef Name="BeginDate"/><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="EndDate"/><PropertyRef Name="InfotypeId"/><PropertyRef Name="LockIndicator"/><PropertyRef Name="ObjectId"/><PropertyRef Name="SequenceNumber"/><PropertyRef Name="SubtypeId"/></Key><Property Name="BeginDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Date déb."
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="BVAMT" Type="Edm.String" MaxLength="5" sap:unicode="false" sap:label="Per. hand. &lt; 65" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="BVATL" Type="Edm.String" MaxLength="5" sap:unicode="false" sap:label="NbAutrPrsChrg&lt;65" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="BVKTL" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="Coûts enfants" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="BVMKT" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="Enf. handicapé" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="BVRES" Type="Edm.Boolean" sap:unicode="false" sap:label="Résident" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="BVWMV" Type="Edm.Boolean" sap:unicode="false" sap:label="Employé handic." sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="DisplayScreen" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="ÉcrInterfUtil." sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="EditScreen" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="ÉcrInterfUtil." sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="EmployeeNumber" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Matricule"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="EndDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Date fin" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="InfotypeId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Infotype" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="IsDeletable" Type="Edm.Boolean" sap:unicode="false" sap:label="VRAI" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/><Property Name="IsEditable" Type="Edm.Boolean" sap:unicode="false" sap:label="VRAI" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/><Property Name="LockIndicator" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Code blocage" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="N65SD" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="PersHand. &gt;= 65" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="NR65S" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="NbrePers. &gt;= 65" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ObjectId" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="ID objet" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="PersInfoEtag" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Valeur de hachage" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="SequenceNumber" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="N° enr. infty"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="SubtypeId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="SsType" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="User" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Modifié par" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><NavigationProperty Name="FieldMetaDataSet" Relationship="ZHCMFAB_0101_SRV.fromMy0101DefaultToFieldMetadata"
+					FromRole="FromRole_fromMy0101DefaultToFieldMetadata" ToRole="ToRole_fromMy0101DefaultToFieldMetadata"/><NavigationProperty Name="ValidityInfoSet" Relationship="ZHCMFAB_0101_SRV.fromMy0101DefaultToValidityInfo"
+					FromRole="FromRole_fromMy0101DefaultToValidityInfo" ToRole="ToRole_fromMy0101DefaultToValidityInfo"/></EntityType>
+			<Association Name="fromMy0101DefaultToFieldMetadata" sap:content-version="1"><End Type="ZHCMFAB_0101_SRV.My0101Default" Multiplicity="1" Role="FromRole_fromMy0101DefaultToFieldMetadata"/><End Type="ZHCMFAB_0101_SRV.FieldMetaData" Multiplicity="*" Role="ToRole_fromMy0101DefaultToFieldMetadata"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_fromMy0101DefaultToFieldMetadata"><PropertyRef Name="SequenceNumber"/><PropertyRef Name="BeginDate"/><PropertyRef Name="EndDate"/><PropertyRef Name="LockIndicator"/><PropertyRef Name="ObjectId"/><PropertyRef Name="SubtypeId"/><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="InfotypeId"/></Principal>
+					<Dependent Role="ToRole_fromMy0101DefaultToFieldMetadata"><PropertyRef Name="SequenceNumber"/><PropertyRef Name="BeginDate"/><PropertyRef Name="EndDate"/><PropertyRef Name="LockIndicator"/><PropertyRef Name="ObjectId"/><PropertyRef Name="SubtypeId"/><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="InfotypeId"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="fromMy0101DefaultToValidityInfo" sap:content-version="1"><End Type="ZHCMFAB_0101_SRV.My0101Default" Multiplicity="1" Role="FromRole_fromMy0101DefaultToValidityInfo"/><End Type="ZHCMFAB_0101_SRV.ValidityInfo" Multiplicity="*" Role="ToRole_fromMy0101DefaultToValidityInfo"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_fromMy0101DefaultToValidityInfo"><PropertyRef Name="InfotypeId"/><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="SubtypeId"/><PropertyRef Name="ObjectId"/><PropertyRef Name="LockIndicator"/><PropertyRef Name="EndDate"/><PropertyRef Name="BeginDate"/><PropertyRef Name="SequenceNumber"/></Principal>
+					<Dependent Role="ToRole_fromMy0101DefaultToValidityInfo"><PropertyRef Name="InfotypeId"/><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="SubtypeId"/><PropertyRef Name="ObjectId"/><PropertyRef Name="LockIndicator"/><PropertyRef Name="EndDate"/><PropertyRef Name="BeginDate"/><PropertyRef Name="SequenceNumber"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="fromMy0101ToValidityInfo" sap:content-version="1"><End Type="ZHCMFAB_0101_SRV.My0101" Multiplicity="1" Role="FromRole_fromMy0101ToValidityInfo"/><End Type="ZHCMFAB_0101_SRV.ValidityInfo" Multiplicity="*" Role="ToRole_fromMy0101ToValidityInfo"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_fromMy0101ToValidityInfo"><PropertyRef Name="SequenceNumber"/><PropertyRef Name="BeginDate"/><PropertyRef Name="EndDate"/><PropertyRef Name="LockIndicator"/><PropertyRef Name="ObjectId"/><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="InfotypeId"/><PropertyRef Name="SubtypeId"/></Principal>
+					<Dependent Role="ToRole_fromMy0101ToValidityInfo"><PropertyRef Name="SequenceNumber"/><PropertyRef Name="BeginDate"/><PropertyRef Name="EndDate"/><PropertyRef Name="LockIndicator"/><PropertyRef Name="ObjectId"/><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="InfotypeId"/><PropertyRef Name="SubtypeId"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="fromMy0101ToFieldMetaData" sap:content-version="1"><End Type="ZHCMFAB_0101_SRV.My0101" Multiplicity="1" Role="FromRole_fromMy0101ToFieldMetaData"/><End Type="ZHCMFAB_0101_SRV.FieldMetaData" Multiplicity="*" Role="ToRole_fromMy0101ToFieldMetaData"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_fromMy0101ToFieldMetaData"><PropertyRef Name="BeginDate"/><PropertyRef Name="EndDate"/><PropertyRef Name="LockIndicator"/><PropertyRef Name="ObjectId"/><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="InfotypeId"/><PropertyRef Name="SubtypeId"/><PropertyRef Name="SequenceNumber"/></Principal>
+					<Dependent Role="ToRole_fromMy0101ToFieldMetaData"><PropertyRef Name="BeginDate"/><PropertyRef Name="EndDate"/><PropertyRef Name="LockIndicator"/><PropertyRef Name="ObjectId"/><PropertyRef Name="EmployeeNumber"/><PropertyRef Name="InfotypeId"/><PropertyRef Name="SubtypeId"/><PropertyRef Name="SequenceNumber"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityContainer Name="ZHCMFAB_0101_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="FieldMetaDataSet" EntityType="ZHCMFAB_0101_SRV.FieldMetaData" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="ValidityInfoSet" EntityType="ZHCMFAB_0101_SRV.ValidityInfo" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="My0101Set" EntityType="ZHCMFAB_0101_SRV.My0101" sap:searchable="true" sap:pageable="false" sap:content-version="1"/><EntitySet Name="SubtypeAttributesSet" EntityType="ZHCMFAB_0101_SRV.SubtypeAttributes" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="My0101DefaultSet" EntityType="ZHCMFAB_0101_SRV.My0101Default" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<AssociationSet Name="fromMy0101DefaultToValidityInfoSet" Association="ZHCMFAB_0101_SRV.fromMy0101DefaultToValidityInfo"
+					sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="My0101DefaultSet" Role="FromRole_fromMy0101DefaultToValidityInfo"/><End EntitySet="ValidityInfoSet" Role="ToRole_fromMy0101DefaultToValidityInfo"/></AssociationSet>
+				<AssociationSet Name="fromMy0101ToValidityInfoSet" Association="ZHCMFAB_0101_SRV.fromMy0101ToValidityInfo" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="My0101Set" Role="FromRole_fromMy0101ToValidityInfo"/><End EntitySet="ValidityInfoSet" Role="ToRole_fromMy0101ToValidityInfo"/></AssociationSet>
+				<AssociationSet Name="fromMy0101ToFieldMetaDataSet" Association="ZHCMFAB_0101_SRV.fromMy0101ToFieldMetaData" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="My0101Set" Role="FromRole_fromMy0101ToFieldMetaData"/><End EntitySet="FieldMetaDataSet" Role="ToRole_fromMy0101ToFieldMetaData"/></AssociationSet>
+				<AssociationSet Name="fromMy0101DefaultToFieldMetadataSet" Association="ZHCMFAB_0101_SRV.fromMy0101DefaultToFieldMetadata"
+					sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="My0101DefaultSet" Role="FromRole_fromMy0101DefaultToFieldMetadata"/><End EntitySet="FieldMetaDataSet" Role="ToRole_fromMy0101DefaultToFieldMetadata"/></AssociationSet>
+			</EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZHCMFAB_0101_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZHCMFAB_0101_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,46 @@
+specVersion: "2.6"
+metadata:
+  name: hcm.fab.my0101
+type: application
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false
+        backend:
+          - path: /sap
+            url: http://d-ext-sap036.ontwikkel.be:50200/
+            client: "100"
+            destination: GWD
+          - path: /resources/hcm/fab/lib/common
+            destination: GWD
+            url: http://d-ext-sap036.ontwikkel.be:50200/
+            client: "100"
+            pathPrefix: /sap/bc/ui5_ui5/sap/HCMFAB_COMMON
+        ui5:
+          path:
+            - /resources
+            - /test-resources
+          url: https://ui5.sap.com
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+    - name: fiori-tools-preview
+      afterMiddleware: fiori-tools-appreload
+      configuration:
+        component: hcm.fab.my0101
+        ui5Theme: sap_fiori_3
+    - name: fiori-tools-servestatic
+      beforeMiddleware: fiori-tools-proxy
+      configuration:
+        paths:
+          - path: /resources/hcm/fab/lib/common
+            src: ..\HCMFAB_COMMON
+            fallthrough: false
+          - path: /sap/bc/ui5_ui5/sap/undefined
+            src: ..\HCMFAB_COMMON
+            fallthrough: false

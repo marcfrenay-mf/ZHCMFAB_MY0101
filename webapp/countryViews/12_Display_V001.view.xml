@@ -1,0 +1,34 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:hcmCommon="hcm.fab.lib.common"
+	controllerName="hcm.fab.lib.common.controller.PersInfoWrapperController">
+	<f:SimpleForm id="RecordForm" minWidth="1024" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="1"
+		emptySpanM="1" columnsL="2" columnsM="2" title="{RecordState>/recordTitle}">
+		<f:toolbar>
+			<!-- Toolbar Fragment -->
+			<core:Fragment fragmentName="hcm.fab.lib.common.view.fragment.PersInfoRecordToolbar" type="XML"/></f:toolbar>
+		<f:content>
+			<core:Title text="{i18n>groupDataEmployee}"/>			
+			<Label text="{i18n>BVRES}" id="lblBVRESdis" labelFor="txtBVRES" visible="{FieldStates>/BVRES/Visible}"/>
+			<CheckBox id="txtBVRES" selected="{BVRES}" visible="{FieldStates>/BVRES/Visible}" editable="false"/>
+			<Label text="{i18n>BVWMV}" id="lblBVWMVdis" labelFor="txtBVWMV" visible="{FieldStates>/BVWMV/Visible}"/>
+			<CheckBox id="txtBVWMV" selected="{BVWMV}" visible="{FieldStates>/BVWMV/Visible}" editable="false"/>
+			<core:Title text="{i18n>groupTitleChildren}"/>
+			<Label text="{i18n>BVKTL}" id="lblBVKTLdis" labelFor="txtBVKTL" visible="{FieldStates>/BVKTL/Visible}"/>
+			<Text id="txtBVKTL" text="{BVKTL}" visible="{FieldStates>/BVKTL/Visible}"/>
+			<Label text="{i18n>BVMKT}" id="lblBVMKTdis" labelFor="txtBVMKT" visible="{FieldStates>/BVMKT/Visible}"/>
+			<Text id="txtBVMKT" text="{BVMKT}" visible="{FieldStates>/BVMKT/Visible}"/>
+			<core:Title text="{i18n>groupTitleAgedLT65}"/>
+			<Label text="{i18n>BVATL}" id="lblBVATLdis" labelFor="txtBVATL" visible="{FieldStates>/BVATL/Visible}"/>
+			<Text id="txtBVATL" text="{BVATL}" visible="{FieldStates>/BVATL/Visible}"/>
+			<Label text="{i18n>BVAMT}" id="lblBVAMTdis" labelFor="txtBVAMT" visible="{FieldStates>/BVAMT/Visible}"/>
+			<Text id="txtBVAMT" text="{BVAMT}" visible="{FieldStates>/BVAMT/Visible}"/>
+			<core:Title text="{i18n>groupTitleAgedGE65}"/>
+			<Label text="{i18n>NR65S}" id="lblNR65Sdis" labelFor="txtNR65S" visible="{FieldStates>/NR65S/Visible}"/>
+			<Text id="txtNR65S" text="{NR65S}" visible="{FieldStates>/NR65S/Visible}"/>
+			<Label text="{i18n>N65SD}" id="lblN65SDdis" labelFor="txtN65SD" visible="{FieldStates>/N65SD/Visible}"/>
+			<Text id="txtN65SD" text="{N65SD}" visible="{FieldStates>/N65SD/Visible}"/>
+			<Label text="{i18n>CRN65}" id="lblCRN65dis" labelFor="txtCRN65" visible="{FieldStates>/CRN65/Visible}"/>
+			<Text id="txtCRN65" text="{CRN65}" visible="{FieldStates>/CRN65/Visible}"/>
+		</f:content>
+	</f:SimpleForm>
+</mvc:View>

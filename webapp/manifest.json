@@ -1,0 +1,156 @@
+{
+    "_version": "1.4.0",
+    "sap.app": {
+        "id": "hcm.fab.my0101",
+        "type": "application",
+        "resources": "resources.json",
+        "i18n": "i18n/i18n.properties",
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "applicationVersion": {
+            "version": "1.1.1"
+        },
+        "ach": "",
+        "dataSources": {
+            "ZHCMFAB_0101_SRV": {
+                "uri": "/sap/opu/odata/sap/ZHCMFAB_0101_SRV/",
+                "type": "OData",
+                "settings": {
+                    "localUri": "localService/ZHCMFAB_0101_SRV/metadata.xml"
+                }
+            }
+        },
+        "sourceTemplate": {
+            "id": "servicecatalog.connectivityComponentForManifest",
+            "version": "0.0.0",
+            "toolsId": "ae4db4cd-92cf-4bf6-91ba-cee43622785e"
+        },
+        "crossNavigation": {
+            "inbounds": {
+                "my0101data": {
+                    "signature": {
+                        "parameters": {},
+                        "additionalParameters": "ignored"
+                    },
+                    "semanticObject": "Employee",
+                    "action": "manageMy0101Data"
+                }
+            }
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "sap-icon://task",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_belize"
+        ]
+    },
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "hcm.fab.my0101.view.App",
+            "type": "XML",
+            "id": "app"
+        },
+        "dependencies": {
+            "minUI5Version": "1.44.47",
+            "libs": {
+                "sap.ui.core": {
+                    "lazy": false
+                },
+                "sap.m": {
+                    "lazy": false
+                },
+                "sap.ui.layout": {
+                    "lazy": false
+                },
+                "sap.ushell": {
+                    "lazy": false
+                },
+                "hcm.fab.lib.common": {
+                    "lazy": false
+                }
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "hcm.fab.my0101.i18n.i18n"
+                }
+            },
+            "entityMap": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "config/EntityMap.json"
+            },
+            "": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZHCMFAB_0101_SRV",
+                "preload": false
+            }
+        },
+        "config": {
+            "sapFiori2Adaptation": true
+        },
+        "handleValidation": true,
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "hcm.fab.my0101.view",
+                "controlId": "app",
+                "controlAggregation": "pages",
+                "bypassed": {
+                    "target": [
+                        "main"
+                    ]
+                },
+                "async": true
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "main",
+                    "target": [
+                        "main"
+                    ]
+                }
+            ],
+            "targets": {
+                "main": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearAggregation": true,
+                    "viewLevel": 1,
+                    "viewName": "Main",
+                    "viewId": "main"
+                }
+            }
+        }
+    },
+    "sap.platform.abap": {
+        "uri": "/sap/bc/ui5_ui5/sap/ZHCMFAB_TAX",
+        "_version": "1.1.0"
+    }
+}

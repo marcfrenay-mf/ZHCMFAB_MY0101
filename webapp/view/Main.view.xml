@@ -1,0 +1,10 @@
+<!--
+
+    Copyright (C) 2009-2020 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<mvc:View controllerName="hcm.fab.my0101.controller.Main" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic"
+	xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:hcmCommon="hcm.fab.lib.common" height="100%">
+	<hcmCommon:controls.PersInfoControl id="My0101" oDataModelName="" infotype="0101" entityMapModelName="entityMap"
+		countryViewsFolder="hcm.fab.my0101.countryViews" assignmentId="{local>/assignmentId}" height="100%" applicationId="My0101" />
+</mvc:View>
